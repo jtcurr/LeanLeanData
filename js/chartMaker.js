@@ -15,7 +15,6 @@ var svg = d3.select('.chart-container').append('svg')
 														.attr('width', width);
 
 function dataReceiver(data) {
-	console.log('!!', d3.max(data)['C']);
 
 	var x = d3.scale.linear()
 									.domain([0, d3.max(data)['C']])
@@ -37,7 +36,6 @@ function dataReceiver(data) {
 							return y(i);
 						})
 						.attr('width',function(d,i) {
-							console.log(d['C'])
 							return x(d['C']);
 						})
 						.attr('height', function(d,i) {
