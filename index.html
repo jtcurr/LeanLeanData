@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lean Data</title>
+	<script src="d3/d3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/jquery-csv.js"></script>
+	<script type="text/javascript" src="js/fileRetriever.js"></script>
+</head>
+<body>
+	<div class="chart-container"></div>
+	<select class="toggle">
+		<option value=null>Toggle series</option>
+		<option value="Q1">Q1</option>
+		<option value="Q2">Q2</option>
+		<option value="Q3">Q3</option>
+		<option value="Q4">Q4</option>
+	</select>
+	<br>
+	<select class="start-date">
+		<option value=null>Start Date</option>
+		<option value="2010">2010</option>
+		<option value="2011">2011</option>
+		<option value="2012">2012</option>
+		<option value="2013">2013</option>
+		<option value="2014">2014</option>
+		<option value="2015">2015</option>
+		<option value="2016">2016</option>
+		<option value="2017">2017</option>
+	</select>
+	<select class="end-date">
+		<option value=null>End Date</option>
+		<option value="2010">2010</option>
+		<option value="2011">2011</option>
+		<option value="2012">2012</option>
+		<option value="2013">2013</option>
+		<option value="2014">2014</option>
+		<option value="2015">2015</option>
+		<option value="2016">2016</option>
+		<option value="2017">2017</option>
+	</select>
+	<div class="load-csv">
+		<form onsubmit="csvFileGetter()">
+			<input class="csv-input" type="text"><button value="submit">Load CSV</button>
+		</form>
+	</div>
+</body>
+	<script src="js/chartMaker.js"></script>
+</html>
