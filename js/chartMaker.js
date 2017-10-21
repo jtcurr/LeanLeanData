@@ -7,7 +7,6 @@ var margin = {
 }
 
 var height = 600 - margin.bottom - margin.top;
-var width = 800 - margin.right - margin.left;
 
 var svg = d3.select('.chart-container').append('svg')
 														.attr('id', 'chart')
